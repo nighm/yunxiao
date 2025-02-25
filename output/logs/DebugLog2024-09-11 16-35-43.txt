@@ -1,0 +1,120 @@
+DEBUG:root:debug level test
+INFO:root:info level test
+WARNING:root:warning level test
+ERROR:root:error level test
+CRITICAL:root:critical level test
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/timeouts {"implicit": 1500}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/timeouts HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/goog/cdp/execute {"cmd": "Page.addScriptToEvaluateOnNewDocument", "params": {"source": "\n            Object.defineProperty(navigator, 'webdriver', {\n              get: () => undefined\n            })\n          "}}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/goog/cdp/execute HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/window/maximize {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/window/maximize HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/url {"url": "https://devops.aliyun.com/workbench?orgId=63e607799dee9309492bc382"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "css selector", "value": "[id=\"alibaba-login-box\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/frame {"id": {"ELEMENT": "98C8313029391F555E9CDE842D291F67_element_45", "element-6066-11e4-a52e-4f735466cecf": "98C8313029391F555E9CDE842D291F67_element_45"}}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/frame HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "//*[@id=\"fm-login-id\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/415FC453CADB0389C8241C2926913F2E_element_46/value {"text": "dt_1176306168", "value": ["d", "t", "_", "1", "1", "7", "6", "3", "0", "6", "1", "6", "8"], "id": "415FC453CADB0389C8241C2926913F2E_element_46"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element/415FC453CADB0389C8241C2926913F2E_element_46/value HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "//*[@id=\"fm-login-password\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/415FC453CADB0389C8241C2926913F2E_element_43/value {"text": "62483768dd", "value": ["6", "2", "4", "8", "3", "7", "6", "8", "d", "d"], "id": "415FC453CADB0389C8241C2926913F2E_element_43"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element/415FC453CADB0389C8241C2926913F2E_element_43/value HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "//*[@id=\"login-form\"]/div[5]/button"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 404 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "//*[@id=\"login-form\"]/div[6]/button"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/415FC453CADB0389C8241C2926913F2E_element_47/click {"id": "415FC453CADB0389C8241C2926913F2E_element_47"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element/415FC453CADB0389C8241C2926913F2E_element_47/click HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "css selector", "value": "[id=\"baxia-dialog-content\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 404 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "//*[text()=\"\u4e91\u6548 \u5de5\u4f5c\u53f0\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/url {"url": "https://devops.aliyun.com/testhub/plan#viewIdentifier=fc0ddd9669fd618c2c9729e39b"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/url {"url": "https://devops.aliyun.com/testhub/plan#viewIdentifier=fc0ddd9669fd618c2c9729e39b"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "//*[text()=\"\u8ba1\u5212\u540d\u79f0\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_98/displayed {"id": "58049FB80679A6579DBE3B1124A3D6CF_element_98"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "GET /session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_98/displayed HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_98/enabled {"id": "58049FB80679A6579DBE3B1124A3D6CF_element_98"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "GET /session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_98/enabled HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:34213/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:34213
+DEBUG:urllib3.connectionpool:http://127.0.0.1:34213 "POST /session HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:34213/session/b84c4c3bc4a7b2826275c44f2ab7652e/timeouts {"implicit": 1500}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:34213 "POST /session/b84c4c3bc4a7b2826275c44f2ab7652e/timeouts HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:34213/session/b84c4c3bc4a7b2826275c44f2ab7652e/element {"using": "xpath", "value": "//*[text()=\"[\u6606\u4ed1\u536b\u58eb-Klsec-GHZL-1.44]B007\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:34213 "POST /session/b84c4c3bc4a7b2826275c44f2ab7652e/element HTTP/1.1" 404 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "//*[text()=\"\u6bcf\u9875\u663e\u793a:\"]/../span[2]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_101/click {"id": "58049FB80679A6579DBE3B1124A3D6CF_element_101"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_101/click HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "/html/body/div[5]/div/ul/li[3]/div/span"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 404 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "/html/body/div[4]/div/ul/li[3]/div/span"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_102/click {"id": "58049FB80679A6579DBE3B1124A3D6CF_element_102"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_102/click HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "//*[text()=\"\u8ba1\u5212\u540d\u79f0\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_121/displayed {"id": "58049FB80679A6579DBE3B1124A3D6CF_element_121"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "GET /session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_121/displayed HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_121/enabled {"id": "58049FB80679A6579DBE3B1124A3D6CF_element_121"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "GET /session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_121/enabled HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "//*[@id=\"container\"]/div/main/section/section/section/div/div/div/div/div[2]/div[2]/div[1]/div"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_106/elements {"using": "xpath", "value": "button", "id": "58049FB80679A6579DBE3B1124A3D6CF_element_106"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_106/elements HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "//*[@id=\"container\"]/div/main/section/section/section/div/div/div/div/div[2]/div[2]/div[1]/div/button[1]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_107/click {"id": "58049FB80679A6579DBE3B1124A3D6CF_element_107"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_107/click HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element {"using": "xpath", "value": "//*[text()=\"\u8ba1\u5212\u540d\u79f0\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "POST /session/0e5bc6c245cfcd5b68653bc3315422f5/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_121/displayed {"id": "58049FB80679A6579DBE3B1124A3D6CF_element_121"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "GET /session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_121/displayed HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:33967/session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_121/enabled {"id": "58049FB80679A6579DBE3B1124A3D6CF_element_121"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:33967 "GET /session/0e5bc6c245cfcd5b68653bc3315422f5/element/58049FB80679A6579DBE3B1124A3D6CF_element_121/enabled HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

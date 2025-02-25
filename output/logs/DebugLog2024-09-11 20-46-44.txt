@@ -1,0 +1,21 @@
+DEBUG:root:debug level test
+INFO:root:info level test
+WARNING:root:warning level test
+ERROR:root:error level test
+CRITICAL:root:critical level test
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:44654/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:44654
+DEBUG:urllib3.connectionpool:http://127.0.0.1:44654 "POST /session HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:44654/session/167f7cabce3faebc0f4ed3e122b2d35a/timeouts {"implicit": 1500}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:44654 "POST /session/167f7cabce3faebc0f4ed3e122b2d35a/timeouts HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:44654/session/167f7cabce3faebc0f4ed3e122b2d35a/goog/cdp/execute {"cmd": "Page.addScriptToEvaluateOnNewDocument", "params": {"source": "\n            Object.defineProperty(navigator, 'webdriver', {\n              get: () => undefined\n            })\n          "}}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:44654 "POST /session/167f7cabce3faebc0f4ed3e122b2d35a/goog/cdp/execute HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:44654/session/167f7cabce3faebc0f4ed3e122b2d35a/window/maximize {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:44654 "POST /session/167f7cabce3faebc0f4ed3e122b2d35a/window/maximize HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:44654/session/167f7cabce3faebc0f4ed3e122b2d35a/timeouts {"implicit": 1500}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:44654 "POST /session/167f7cabce3faebc0f4ed3e122b2d35a/timeouts HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

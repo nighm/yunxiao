@@ -1,0 +1,33 @@
+DEBUG:root:debug level test
+INFO:root:info level test
+WARNING:root:warning level test
+ERROR:root:error level test
+CRITICAL:root:critical level test
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:46338/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:46338
+DEBUG:urllib3.connectionpool:http://127.0.0.1:46338 "POST /session HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:46338/session/c65dde0b3ef7fa355bd19f91dfda9488/timeouts {"implicit": 1500}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:46338 "POST /session/c65dde0b3ef7fa355bd19f91dfda9488/timeouts HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:46338/session/c65dde0b3ef7fa355bd19f91dfda9488/goog/cdp/execute {"cmd": "Page.addScriptToEvaluateOnNewDocument", "params": {"source": "\n            Object.defineProperty(navigator, 'webdriver', {\n              get: () => undefined\n            })\n          "}}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:46338 "POST /session/c65dde0b3ef7fa355bd19f91dfda9488/goog/cdp/execute HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:46338/session/c65dde0b3ef7fa355bd19f91dfda9488/window/maximize {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:46338 "POST /session/c65dde0b3ef7fa355bd19f91dfda9488/window/maximize HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:46338/session/c65dde0b3ef7fa355bd19f91dfda9488/timeouts {"implicit": 1500}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:46338 "POST /session/c65dde0b3ef7fa355bd19f91dfda9488/timeouts HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:46338/session/c65dde0b3ef7fa355bd19f91dfda9488/url {"url": "https://devops.aliyun.com/workbench?orgId=63e607799dee9309492bc382"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:46338 "POST /session/c65dde0b3ef7fa355bd19f91dfda9488/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:46338/session/c65dde0b3ef7fa355bd19f91dfda9488/element {"using": "css selector", "value": "[id=\"alibaba-login-box\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:46338 "POST /session/c65dde0b3ef7fa355bd19f91dfda9488/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:46338/session/c65dde0b3ef7fa355bd19f91dfda9488/frame {"id": {"ELEMENT": "DE78E8E57097D7421E2BD8B019DAF5FD_element_45", "element-6066-11e4-a52e-4f735466cecf": "DE78E8E57097D7421E2BD8B019DAF5FD_element_45"}}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:46338 "POST /session/c65dde0b3ef7fa355bd19f91dfda9488/frame HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:46338/session/c65dde0b3ef7fa355bd19f91dfda9488/element {"using": "xpath", "value": "//*[@id=\"fm-login-id\"]"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:46338 "POST /session/c65dde0b3ef7fa355bd19f91dfda9488/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

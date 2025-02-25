@@ -1,0 +1,35 @@
+DEBUG:root:debug level test
+INFO:root:info level test
+WARNING:root:warning level test
+ERROR:root:error level test
+CRITICAL:root:critical level test
+DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\bios\AppData\Local\Programs\Python\Python36\Lib\site-packages\auto_platform\Google\Chrome\chromedriver.exe` in a child process with pid: 23460
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11152/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11152
+DEBUG:urllib3.connectionpool:http://localhost:11152 "POST /session HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"101.0.4951.54","chrome":{"chromedriverVersion":"101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904})","userDataDir":"C:\\Users\\bios\\AppData\\Local\\Temp\\scoped_dir23460_70654388"},"goog:chromeOptions":{"debuggerAddress":"localhost:11155"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"efec2ff9724d0f5b3e4451277045cdee"}} | headers=HTTPHeaderDict({'Content-Length': '787', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11152/session/efec2ff9724d0f5b3e4451277045cdee/timeouts {"implicit": 1500}
+DEBUG:urllib3.connectionpool:http://localhost:11152 "POST /session/efec2ff9724d0f5b3e4451277045cdee/timeouts HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11152/session/efec2ff9724d0f5b3e4451277045cdee/goog/cdp/execute {"cmd": "Page.addScriptToEvaluateOnNewDocument", "params": {"source": "\n            Object.defineProperty(navigator, 'webdriver', {\n              get: () => undefined\n            })\n          "}}
+DEBUG:urllib3.connectionpool:http://localhost:11152 "POST /session/efec2ff9724d0f5b3e4451277045cdee/goog/cdp/execute HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"identifier":"2"}} | headers=HTTPHeaderDict({'Content-Length': '28', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11152/session/efec2ff9724d0f5b3e4451277045cdee/window/maximize {}
+DEBUG:urllib3.connectionpool:http://localhost:11152 "POST /session/efec2ff9724d0f5b3e4451277045cdee/window/maximize HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"height":1048,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11152/session/efec2ff9724d0f5b3e4451277045cdee/url {"url": "https://devops.aliyun.com/workbench?orgId=63e607799dee9309492bc382"}
+DEBUG:urllib3.connectionpool:http://localhost:11152 "POST /session/efec2ff9724d0f5b3e4451277045cdee/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11152/session/efec2ff9724d0f5b3e4451277045cdee/element {"using": "css selector", "value": "[id=\"alibaba-login-box\"]"}
+DEBUG:urllib3.connectionpool:http://localhost:11152 "POST /session/efec2ff9724d0f5b3e4451277045cdee/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"cf07d6b3-ad30-4f73-98f7-56280de7522b"}} | headers=HTTPHeaderDict({'Content-Length': '88', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:11152/session/efec2ff9724d0f5b3e4451277045cdee/frame {"id": {"element-6066-11e4-a52e-4f735466cecf": "cf07d6b3-ad30-4f73-98f7-56280de7522b"}}
+DEBUG:urllib3.connectionpool:http://localhost:11152 "POST /session/efec2ff9724d0f5b3e4451277045cdee/frame HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
