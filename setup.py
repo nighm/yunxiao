@@ -39,9 +39,5 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11"
-    ],
-    project_urls={
-        "Bug Reports": "https://github.com/[your-username]/yunxiao-automation/issues",
-        "Source": "https://github.com/[your-username]/yunxiao-automation",
-    }
+    ]
 ) 

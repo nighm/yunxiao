@@ -52,4 +52,10 @@ logs/
 
 # OS specific
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Executables and installers
+*.exe
+*.msi
+*.dll
+GitHubDesktopSetup* 
