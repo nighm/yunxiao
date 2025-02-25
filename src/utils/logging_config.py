@@ -23,7 +23,7 @@ def setup_logging():
     # 创建文件处理器
     file_handler = RotatingFileHandler(
         log_file,
-        maxBytes=10*1024*1024,  # 10MB
+        maxBytes=10 * 1024 * 1024,  # 10MB
         backupCount=5,
         encoding='utf-8'
     )

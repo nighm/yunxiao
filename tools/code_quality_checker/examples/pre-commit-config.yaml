@@ -1,0 +1,11 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: code-quality
+        name: code quality check
+        entry: code-quality-check
+        language: python
+        types: [python]
+        args: [--changed-only]  # 只检查变更的文件
+        additional_dependencies:
+          - git+https://github.com/yourusername/code_quality_checker.git 

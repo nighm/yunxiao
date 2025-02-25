@@ -1,8 +1,6 @@
 import unittest
-from unittest.mock import MagicMock, patch
 from datetime import datetime
 import os
-import json
 from src.core.automation.test_executor import TestExecutor
 from src.core.automation.result_manager import ResultManager
 

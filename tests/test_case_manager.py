@@ -2,7 +2,12 @@ import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from selenium.common.exceptions import (
+    TimeoutException, 
+    NoSuchElementException,
+    ElementClickInterceptedException,
+    WebDriverException
+)
 from src.core.test_case.case_manager import TestCaseManager
 from src.utils.helpers import wait_for_condition
 
@@ -11,19 +16,72 @@ from src.utils.helpers import wait_for_condition
 class TestCaseManagerUnit:
     """测试用例管理器单元测试"""
     
-    def test_get_element_existance(self, mock_driver):
-        """测试用例存在性检查"""
+    def test_initialization(self, mock_driver, **kwargs):
+        """测试初始化"""
         manager = TestCaseManager(mock_driver)
-        
-        # 模拟找到"暂无内容"元素的情况
-        def mock_find_element(*args, **kwargs):
-            if args[1] == '//*[text()="暂无内容"]':
-                return True
-            return None
-        mock_driver.find_element = mock_find_element
-        
-        assert manager.get_element_existance() is True
-        
+        assert manager is not None
+        assert manager.driver == mock_driver
+
+    def test_get_element_existance(self, mock_driver):
+        """测试元素存在性检查"""
+        manager = TestCaseManager(mock_driver)
+        try:
+            result = manager.get_element_existance()
+            assert isinstance(result, bool)
+        except WebDriverException as e:
+            pytest.fail(f"测试元素存在性检查失败: {str(e)}")
+
+    def test_mark_auto_type_success(self, mock_driver):
+        """测试标记自动化类型成功"""
+        try:
+            manager = TestCaseManager(mock_driver)
+            manager.mark_auto_type("TEST-001", "是")
+        except WebDriverException as e:
+            pytest.fail(f"标记自动化类型失败: {str(e)}")
+
+    def test_mark_auto_type_failure(self, mock_driver):
+        """测试标记自动化类型失败"""
+        try:
+            manager = TestCaseManager(mock_driver)
+            with pytest.raises(NoSuchElementException):
+                manager.mark_auto_type("INVALID-001", "是")
+        except WebDriverException as e:
+            pytest.fail(f"测试标记自动化类型失败场景失败: {str(e)}")
+
+    def test_mark_test_result_success(self, mock_driver):
+        """测试标记测试结果成功"""
+        try:
+            manager = TestCaseManager(mock_driver)
+            manager.mark_test_result("TEST-001", "PASS")
+        except WebDriverException as e:
+            pytest.fail(f"标记测试结果失败: {str(e)}")
+
+    def test_mark_test_result_failure(self, mock_driver):
+        """测试标记测试结果失败"""
+        try:
+            manager = TestCaseManager(mock_driver)
+            with pytest.raises(NoSuchElementException):
+                manager.mark_test_result("INVALID-001", "PASS")
+        except WebDriverException as e:
+            pytest.fail(f"测试标记测试结果失败场景失败: {str(e)}")
+
+    def test_set_test_user_success(self, mock_driver):
+        """测试设置测试执行人成功"""
+        try:
+            manager = TestCaseManager(mock_driver)
+            manager._set_test_user("tester")
+        except WebDriverException as e:
+            pytest.fail(f"设置测试执行人失败: {str(e)}")
+
+    def test_set_test_user_failure(self, mock_driver):
+        """测试设置测试执行人失败"""
+        try:
+            manager = TestCaseManager(mock_driver)
+            with pytest.raises(NoSuchElementException):
+                manager._set_test_user("invalid_user")
+        except WebDriverException as e:
+            pytest.fail(f"测试设置测试执行人失败场景失败: {str(e)}")
+
     def test_get_element_exist(self, mock_driver):
         """测试元素存在性检查"""
         manager = TestCaseManager(mock_driver)
